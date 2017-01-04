@@ -25,7 +25,7 @@ gulp.task('rss', function() {
         // How we deal with contextual data (typically Front-Matter)
         properties: {
           data:         'frontMatter',  // name of property containing the data, typically extracted front-matter
-          // Proparty names mapping
+          // Property names mapping
           title:        'title',        // post's title (means plugin will read `file.frontMatter.title`, mandatory)
           link:         'permalink',    // post's URL (mandatory)
           description:  'description',  // post's description (optional)
@@ -51,6 +51,8 @@ gulp.task('rss', function() {
 ```
 
 See https://github.com/jpmonette/feed for the whole RSS configuration. This is the underlying module.
+
+Plugin can get `file.data` from `gulp-data` on default.
 
 ## LICENSE (BSD 2-Clause)
 

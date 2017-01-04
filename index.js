@@ -55,7 +55,7 @@ module.exports = function rss(options) {
   return es.through(
 
     function (file) {
-      var data = file[options.data],
+      var data = file.data || file[options.data],
         item = {},
         prop;
 

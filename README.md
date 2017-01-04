@@ -41,6 +41,7 @@ gulp.task('rss', function() {
           description:  'My very own blog',             // Feed description (optional)
           link:         'http://my.bl.og',              // Feed link (optional)
           author:       { name: 'Nicolas Chambrier' },  // Blog's author (optional)
+          content:      true                            // add content to the feed (optional)
           // etc…
         }
       }

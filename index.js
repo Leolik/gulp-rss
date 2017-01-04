@@ -95,7 +95,9 @@ module.exports = function rss(options) {
         util.log('[rss]', file.path, 'skipped (no title or description)');
         return;
       }
-      item.content = String(file.contents);
+      if (item.content) {
+        item.content = String(file.contents);
+      }
       items.push(item);
     },
 
